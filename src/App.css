@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -13,15 +9,31 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  background-color: #1a508b;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+}
+.arrow {
+  height: 40px;
+  margin-left: 10px;
+  margin-top: 0px;
+  background-color: #1a508b;
+}
+.header-name {
+  text-align: right;
+  padding-left: 14%;
+  font-size: 22px;
+  font-family: "Aclonica", sans-serif;
+}
+.header-language {
+  text-align: right;
+  font-size: 22px;
+  font-family: "Aclonica", sans-serif;
 }
 
 .App-link {
