@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "./App.css";
-import Home from "./Home";
-import Registration from "./Registration";
-import Login from "./Login";
-import Forgot_Password from "./Forgot_Password";
+import Home from "./component/Home";
+import Registration from "./component/Registration";
+import Login from "./component/Login";
+import Forgot_Password from "./component/Forgot_Password";
 import { BrowserRouter, Route } from "react-router-dom";
 class App extends Component {
   render() {

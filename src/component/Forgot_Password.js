@@ -11,6 +11,7 @@ class Forgot_Password extends Component {
         <h2>Forgot password</h2>
         <p>Enter your Email to reset your password.</p>
         <input type="email" placeholder="Email" />
+        <br />
         <button>SUBMIT</button>
       </div>
     );
