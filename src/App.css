@@ -12,26 +12,27 @@
 .header {
   background-color: #1a508b;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   color: white;
 }
 .arrow {
-  height: 40px;
-  margin-left: 10px;
+  height: 20px;
+  display: inline;
+  text-align: right;
+  position: relative;
+  margin-right: 0px;
   margin-top: 0px;
   background-color: #1a508b;
 }
 .header-name {
-  text-align: right;
+  display: inline;
   padding-left: 14%;
   font-size: 22px;
   font-family: "Aclonica", sans-serif;
 }
 .header-language {
-  text-align: right;
+  display: inline;
+  position: relative;
+  margin-right: 500px;
   font-size: 22px;
   font-family: "Aclonica", sans-serif;
 }
