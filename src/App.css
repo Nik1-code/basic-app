@@ -36,7 +36,11 @@
   font-size: 22px;
   font-family: "Aclonica", sans-serif;
 }
-
+.link {
+  border: 2px solid peru;
+  color: saddlebrown;
+  font-size: 2px;
+}
 .App-link {
   color: #61dafb;
 }
