@@ -101,44 +101,44 @@ class App extends Component {
     }
   }
   //post data
-  // register() {
-  //   const { age, name, email, password } = this.state;
-  //   console.log(age, name, email, password);
-  //   let data = { age, name, email, password };
-  //   fetch("http://localhost:5000/Users", {
-  //     method: "POST",
-  //     headers: {
-  //       Accept: "application/json",
-  //       "Content-Type": "application/json",
-  //     },
-  //     body: JSON.stringify(data),
-  //   }).then((resp) => {
-  //     resp.json().then((result) => {
-  //       console.warn("result", result);
-  //     });
-  //   });
-  // }
+  register() {
+    const { age, name, email, password } = this.state;
+    console.log(age, name, email, password);
+    let data = { age, name, email, password };
+    fetch("http://localhost:5000/users", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((resp) => {
+      resp.json().then((result) => {
+        console.warn("result", result);
+      });
+    });
+  }
 
   //Resgister new user
-  register() {
-    const emailFlag = this.isValidEmail(this.state.email);
-    const passwordFlag = this.isValidPassword(this.state.password);
-    const nameFlag = this.isValidName(this.state.name);
-    const ageFlag = this.isValidAge(this.state.age);
-    if (emailFlag && passwordFlag && nameFlag && ageFlag) {
-      var newId = {};
-      newId["age"] = this.state.age;
-      newId["name"] = this.state.name;
-      newId["email"] = this.state.email;
-      newId["password"] = this.state.password;
-      console.log(newId);
-      this.data.push(newId);
-      console.log(this.data);
-      alert("You have successfully created account.");
-      this.setState({ email: "", age: "", name: "", password: "" });
-    }
-  }
-  data = [];
+  // register() {
+  //   const emailFlag = this.isValidEmail(this.state.email);
+  //   const passwordFlag = this.isValidPassword(this.state.password);
+  //   const nameFlag = this.isValidName(this.state.name);
+  //   const ageFlag = this.isValidAge(this.state.age);
+  //   if (emailFlag && passwordFlag && nameFlag && ageFlag) {
+  //     var newId = {};
+  //     newId["age"] = this.state.age;
+  //     newId["name"] = this.state.name;
+  //     newId["email"] = this.state.email;
+  //     newId["password"] = this.state.password;
+  //     console.log(newId);
+  //     this.data.push(newId);
+  //     console.log(this.data);
+  //     alert("You have successfully created account.");
+  //     this.setState({ email: "", age: "", name: "", password: "" });
+  //   }
+  // }
+  // data = [];
 
   // ------------Login Page ----------------------
   login() {
@@ -189,7 +189,7 @@ class App extends Component {
   }
 
   render() {
-    console.log(this.data);
+    // console.log(this.data);
     return (
       <BrowserRouter>
         <Route path="/" exact component={Home} />
